@@ -1,0 +1,17 @@
+ 
+ 
+<ul>
+
+  {% for author in post_list %}
+  <li>
+    <marquee>
+      <a href="{{ author.get_absolute_url }}">
+         {{author.title}} - {{author.body}}  - {{ author.body }}
+      </a>
+    </marquee>
+  </li>
+  {% endfor %}
+
+</ul>
+
+<p>There are no authors available.</p>
